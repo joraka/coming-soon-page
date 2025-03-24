@@ -8,6 +8,11 @@ textarea {
   resize: vertical;
 }
 
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
 body,
 textarea,
 input {
@@ -45,10 +50,12 @@ header {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  flex: 1;
 }
 
-.text-red {
-  color: rgb(255, 87, 87);
+.p-mark {
+  font-weight: 500;
+  color: #ff0040;
 }
 
 .flex-col {
@@ -63,7 +70,7 @@ header {
   gap: 20px;
   text-align: center;
   margin: 50px 0;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.838);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.838), 1px 1px 1px black;
 }
 
 .countdown > div > div:nth-of-type(1) {
@@ -89,6 +96,7 @@ header {
 
 .paragraph-1 {
   font-weight: 500;
+  text-shadow: 1px 1px 5px black;
   color: rgb(240, 240, 240);
 }
 
@@ -146,8 +154,10 @@ input[type="button"] {
 }
 
 .footer {
+  position: relative;
   padding: 20px 10px;
   background-color: #03a9f5;
+  width: 100%;
 }
 
 .footer hr {
@@ -163,6 +173,7 @@ input[type="button"] {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .right-section {
@@ -177,13 +188,16 @@ input[type="button"] {
   padding: 15px;
 }
 
-.left-section > p {
-  color: rgb(120, 120, 120);
-}
-
 .left-section > h3,
 .right-section > h3 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.left-section > p,
+.right-section > p {
+  color: rgb(151, 151, 151);
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .bar {
@@ -257,4 +271,12 @@ input[type="button"] {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+
+.message-textarea {
+  min-height: 100px;
+}
+
+.p-link {
+  text-decoration: none;
 }
