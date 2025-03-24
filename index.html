@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>coming soon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <section class="container flex-col">
+      <section class="container flex-col email-wrapper text-center">
         <img src="./images/undraw_subscribe_w8sz.svg" alt="" style="width: 70px" />
         <h1 class="heading-1">coming soon</h1>
         <div class="paragraph-1">
           Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing.
         </div>
-        <div class="countdown flex-row">
+        <div class="countdown flex-row text-center">
           <div>
             <div>432</div>
             <div>DAYS</div>
@@ -32,11 +38,11 @@
             <div>SECONDS</div>
           </div>
         </div>
-        <div>
+        <form class="subscribe-form flex-col">
           <input type="email" placeholder="Type your email" />
           <input type="button" value="Subscribe Now" />
           <div>scroll image</div>
-        </div>
+        </form>
       </section>
     </header>
     <main class="container">
@@ -63,7 +69,7 @@
         <div>HAVE ANY QUESTION?</div>
         <p>
           Lorem ipsum dolor sit amet, consectetur
-          <span class="color-red">bob@marley.com</span> adipisicing elit. Amet, dolor!
+          <span class="text-red">bob@marley.com</span> adipisicing elit. Amet, dolor!
         </p>
         <form>
           <input type="text" placeholder="Name" />

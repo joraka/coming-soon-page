@@ -5,10 +5,14 @@
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: gray;
 }
 
 header {
+  background-color: #6a8097;
   background-image: url(./images/bg-1.jpg);
   background-position: center;
   background-size: cover;
@@ -22,7 +26,7 @@ header {
   margin: 0 auto;
 }
 
-.color-red {
+.text-red {
   color: rgb(255, 87, 87);
 }
 
@@ -34,13 +38,21 @@ header {
 }
 
 .countdown {
-  background-color: white;
+  color: white;
   gap: 20px;
   text-align: center;
+  margin: 50px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.838);
 }
 
 .countdown > div > div:nth-of-type(1) {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.email-wrapper {
+  width: 100%;
+  max-width: 400px;
 }
 
 .flex-row {
@@ -49,13 +61,70 @@ header {
 
 .heading-1 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2.2rem;
   padding: 20px 0 10px;
 }
 
 .paragraph-1 {
-  width: 100%;
-  max-width: 400px;
+  font-weight: 500;
+  color: rgb(240, 240, 240);
+}
+
+.text-center {
   text-align: center;
+}
+
+.subscribe-form {
+  width: 100%;
+}
+
+.subscribe-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.subscribe-form input {
+  margin: 10px 0;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.subscribe-form input[type="email"]:focus {
+  background-color: black;
+}
+
+.subscribe-form input[type="email"]::out {
+  border: none;
+  background-color: black;
+}
+
+.subscribe-form input[type="email"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.subscribe-form input[type="button"] {
+  padding: 10px 40px;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #f11d5a;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.387);
+  border-radius: 3px;
+}
+
+.subscribe-form input[type="button"]:hover {
+  background-color: #d3194e;
+}
+
+input[type="button"] {
+  cursor: pointer;
 }
