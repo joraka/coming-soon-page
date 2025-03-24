@@ -39,48 +39,77 @@
           </div>
         </div>
         <form class="subscribe-form flex-col">
-          <input type="email" placeholder="Type your email" />
-          <input type="button" value="Subscribe Now" />
+          <input type="email" placeholder="Type your email" class="text-input-1" />
+          <input type="button" value="Subscribe Now" class="button-input-1" />
           <div>scroll image</div>
         </form>
       </section>
     </header>
-    <main class="container">
+    <main class="container flex-row main-box">
       <section class="left-section">
-        <div>ABOUT STARTUP</div>
+        <h3>ABOUT STARTUP</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minus autem neque porro
           est ex repudiandae quas, necessitatibus.
         </p>
-        <div>
-          <div>UX Design</div>
-          <div>90%</div>
+        <div class="bar">
+          <div class="bar-top">
+            <div>UX Design</div>
+            <div>90%</div>
+          </div>
+          <div class="bar-line" style="width: 90%"></div>
+          <div class="bar-line-full"></div>
         </div>
-        <div>
-          <div>Web Design</div>
-          <div>83%</div>
+        <div class="bar">
+          <div class="bar-top">
+            <div>Web Design</div>
+            <div>85%</div>
+          </div>
+          <div class="bar-line" style="width: 85%"></div>
         </div>
-        <div>
-          <div>Web Development</div>
-          <div>86%</div>
+        <div class="bar">
+          <div class="bar-top">
+            <div>Web Development</div>
+            <div>80%</div>
+          </div>
+          <div class="bar-line" style="width: 80%"></div>
         </div>
       </section>
       <section class="right-section">
-        <div>HAVE ANY QUESTION?</div>
+        <h3>HAVE ANY QUESTION?</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur
           <span class="text-red">bob@marley.com</span> adipisicing elit. Amet, dolor!
         </p>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea></textarea>
-          <input type="button" value="Send Message" />
+        <form class="flex-col form-inputs-padding">
+          <div class="form-inputs-padding right-form-top">
+            <input type="text" placeholder="Name" class="text-input-1 text-input-2" />
+            <input type="email" placeholder="Email" class="text-input-1 text-input-2" />
+          </div>
+          <textarea class="text-input-1 text-input-2" placeholder="Message"></textarea>
+          <div class="form-button-wrapper">
+            <input type="button" value="Send Message" class="button-input-1 button-input-2" />
+          </div>
         </form>
       </section>
     </main>
-    <footer class="container">
-      <hr />
+    <footer class="footer">
+      <section class="container flex-col">
+        <div class="flex-row">
+          <div>pic</div>
+          <div>pic</div>
+          <div>pic</div>
+          <div>pic</div>
+        </div>
+        <hr />
+        <div>img</div>
+        <div>
+          Copyright &copy; 2022 <a href="#">Kebab</a> | All Rights Reserved | Designed By
+          <a href="#">Kebab</a>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+        <p>200+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+      </section>
     </footer>
   </body>
 </html>
