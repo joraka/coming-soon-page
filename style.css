@@ -72,6 +72,8 @@ textarea::placeholder {
   text-align: center;
   margin: 50px 0;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.838), 1px 1px 1px black;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .countdown > div > div:nth-of-type(1) {
@@ -107,6 +109,7 @@ textarea::placeholder {
 
 .subscribe-form {
   width: 100%;
+  padding: 0 5px;
 }
 
 .subscribe-form input[type="email"] {
@@ -272,7 +275,7 @@ input[type="button"] {
 .right-form-top {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  column-gap: 20px;
 }
 
 .message-textarea {
@@ -289,6 +292,7 @@ input[type="button"] {
   column-gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10px;
 }
 
 .footer-links a {
@@ -355,4 +359,13 @@ input[type="button"] {
   color: white;
   margin: 10px 0;
   text-shadow: 0 1px 5px black;
+}
+
+@media screen and (max-width: 600px) {
+  .right-form-top {
+    flex-wrap: wrap;
+  }
+  .right-form-top input {
+    width: 100%;
+  }
 }
