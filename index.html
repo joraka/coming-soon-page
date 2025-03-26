@@ -10,13 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+    "
+    />
     <title>Coming Soon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <section class="container flex-col email-wrapper text-center">
-        <img src="./images/undraw_subscribe_w8sz.svg" alt="" style="width: 70px" />
+    <section class="hero">
+      <div class="container flex-col email-wrapper text-center">
+        <img src="./images/logoipsum-363.svg" alt="" style="width: 70px" />
         <h1 class="heading-1">coming soon</h1>
         <div class="paragraph-1">
           Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -42,10 +47,10 @@
         <form class="subscribe-form flex-col">
           <input type="email" placeholder="Type your email" class="text-input-1" />
           <input type="button" value="Subscribe Now" class="button-input-1" />
-          <div>scroll image</div>
+          <div class="scroll-img"><i class="fa-solid fa-computer-mouse"></i></div>
         </form>
-      </section>
-    </header>
+      </div>
+    </section>
     <main class="container flex-row main-box">
       <section class="left-section">
         <h3>ABOUT STARTUP</h3>
@@ -99,20 +104,39 @@
     </main>
     <footer class="footer text-center">
       <section class="container flex-col">
+        <button class="go-up-btn"><i class="fa-solid fa-arrow-up"></i></button>
         <div class="flex-row">
-          <div>pic</div>
-          <div>pic</div>
-          <div>pic</div>
-          <div>pic</div>
+          <ul class="flex-row footer-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-tumblr"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-square-rss"></i></a>
+            </li>
+          </ul>
         </div>
         <hr />
-        <div>img</div>
-        <div>
-          Copyright &copy; 2025 <a href="#">Kebab</a> | All Rights Reserved | Designed By
-          <a href="#">Kebab</a>
+        <div class="footer-under">
+          <img src="./images/logoipsum-364.svg" alt="company logo" />
+          <div>
+            Copyright &copy; 2025 <a href="#">Kebab</a> | All Rights Reserved | Designed By
+            <a href="#">Kebab</a>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+          <p>200+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
-        <p>200+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
       </section>
     </footer>
   </body>
