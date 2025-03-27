@@ -2,7 +2,7 @@ const [daysEl, hoursEl, minutesEl, secondsEl] = Array.from(
   document.querySelector(".countdown").children
 ).map((el) => el.children[0]);
 
-const targetTime = new Date("2025-07-21T15:30:00");
+const targetTime = new Date("2025-07-21T15:30:00+02:00");
 
 function updateCountdown() {
   const diff = targetTime - Date.now();
