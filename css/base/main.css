@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-textarea {
-  resize: vertical;
-}
-
 body {
   min-height: 100vh;
   display: flex;
@@ -39,14 +35,7 @@ textarea::placeholder {
   font-size: 0.8rem;
 }
 
-.hero {
-  background-color: #6a8097;
-  background-image: url(./images/bg-1.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
+
 
 .container {
   width: 100%;
@@ -64,21 +53,6 @@ textarea::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.countdown {
-  color: white;
-  gap: 20px;
-  text-align: center;
-  margin: 50px 0;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.838), 1px 1px 1px black;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.countdown > div > div:nth-of-type(1) {
-  font-size: 2.1rem;
-  font-weight: 700;
 }
 
 .email-wrapper {
@@ -155,21 +129,6 @@ textarea::placeholder {
 
 input[type="button"] {
   cursor: pointer;
-}
-
-.footer {
-  position: relative;
-  padding: 20px 10px;
-  background-color: #03a9f5;
-  width: 100%;
-}
-
-.footer hr {
-  margin: 20px 0;
-  width: 100%;
-  background-color: rgb(225, 225, 225);
-  border: none;
-  height: 2px;
 }
 
 .main-box {
@@ -280,85 +239,11 @@ input[type="button"] {
 
 .message-textarea {
   min-height: 100px;
+  resize: vertical;
 }
 
 .p-link {
   text-decoration: none;
-}
-
-.footer-links {
-  list-style-type: none;
-  display: flex;
-  column-gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-}
-
-.footer-links a {
-  color: white;
-  transition: all 0.1s ease-in-out;
-  display: block;
-  font-size: 1.2rem;
-  padding: 3px 5px;
-}
-
-.footer-links a:hover {
-  text-shadow: 0 1px 2px black;
-}
-
-.footer-under {
-  display: flex;
-  flex-direction: column;
-  row-gap: 3px;
-  color: rgb(210, 210, 210);
-  font-weight: 500;
-  flex-wrap: wrap;
-  row-gap: 5px;
-  font-size: 0.8rem;
-}
-
-.footer-under img {
-  display: block;
-  width: 200px;
-  align-self: center;
-  margin: 20px 0;
-}
-
-.footer-under a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.go-up-btn {
-  top: -50px;
-  right: 0;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #f11d5a;
-  border-radius: 50%;
-  color: white;
-  font-size: 1rem;
-  box-shadow: 0 1px 5px black;
-  border: none;
-  cursor: pointer;
-}
-
-.go-up-btn:hover {
-  background-color: red;
-}
-
-.footer section {
-  position: relative;
-}
-
-.scroll-img {
-  font-size: 2rem;
-  color: white;
-  margin: 10px 0;
-  text-shadow: 0 1px 5px black;
 }
 
 @media screen and (max-width: 600px) {
